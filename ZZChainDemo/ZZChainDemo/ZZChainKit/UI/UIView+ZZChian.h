@@ -12,14 +12,14 @@
 
 + (UIView *(^)(void))zzNew;
 - (UIView *(^)(UIColor *))zzBgColor;
-- (UIView *(^)(CGFloat x,CGFloat y,CGFloat w,CGFloat h))xywh;
+- (UIView *(^)(CGFloat x,CGFloat y,CGFloat w,CGFloat h))zzFrame;
 
 - (UIView *(^)(CGFloat))x;
 - (UIView *(^)(CGFloat))y;
 - (UIView *(^)(CGFloat))w;
 - (UIView *(^)(CGFloat))h;
-- (UIView *(^)(CGPoint))zzOrigin;
-- (UIView *(^)(CGSize))zzSize;
+- (UIView *(^)(CGFloat x,CGFloat y))zzOrigin;
+- (UIView *(^)(CGFloat w,CGFloat h))zzSize;
 - (UIView *(^)(CGPoint))zzCenter;
 
 - (UIView *(^)(CGFloat))zzCornerRadius;

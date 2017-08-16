@@ -10,7 +10,9 @@
 
 @interface UIColor (ZZChain)
 
-FOUNDATION_EXPORT UIColor *ZZHexColor(NSString *hex);
+FOUNDATION_EXPORT UIColor *ZZHexC(NSString *hex);
+FOUNDATION_EXPORT UIColor *ZZRgbC(CGFloat r,CGFloat g,CGFloat b);
+FOUNDATION_EXPORT UIColor *ZZComRgbC(CGFloat obj);
 
 + (UIColor *(^)(void))red;
 + (UIColor *(^)(void))black;

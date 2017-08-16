@@ -19,5 +19,6 @@
 - (UITextView *(^)(NSTextAlignment))zzAlignment;//文本排列模式
 - (UITextView *(^)(NSAttributedString *))zzAttributedText;//富文本
 
+- (UITextView *(^)(id ))zzDelegate;
 
 @end

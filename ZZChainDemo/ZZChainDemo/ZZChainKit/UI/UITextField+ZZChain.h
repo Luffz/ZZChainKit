@@ -31,5 +31,7 @@
 - (UITextField *(^)(UIKeyboardType ))zzKeyboardType;
 - (UITextField *(^)(BOOL ))zzSecure;
 
+- (UITextField *(^)(id ))zzDelegate;
+
 
 @end

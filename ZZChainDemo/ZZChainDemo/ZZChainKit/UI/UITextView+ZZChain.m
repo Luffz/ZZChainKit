@@ -61,4 +61,11 @@
     };
 }
 
+- (UITextView *(^)(id))zzDelegate{
+    return ^(id obj){
+        self.delegate = obj;
+        return self;
+    };
+}
+
 @end

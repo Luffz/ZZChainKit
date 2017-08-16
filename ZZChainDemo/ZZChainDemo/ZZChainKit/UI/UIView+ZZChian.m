@@ -16,7 +16,7 @@
     };
 }
 
-- (UIView *(^)(CGFloat x,CGFloat y,CGFloat w,CGFloat h))xywh{
+- (UIView *(^)(CGFloat x,CGFloat y,CGFloat w,CGFloat h))zzFrame{
     return ^(CGFloat x,CGFloat y,CGFloat w,CGFloat h){
         CGRect rect = CGRectMake(x, y, w, h);
         self.frame = rect;
@@ -62,19 +62,19 @@
     };
 }
 
-- (UIView *(^)(CGPoint))zzOrigin{
-    return ^(CGPoint origin){
+- (UIView *(^)(CGFloat x,CGFloat y))zzOrigin{
+    return ^(CGFloat x,CGFloat y){
         CGRect rect = self.frame;
-        rect.origin = origin;
+        rect.origin = CGPointMake(x, y);
         self.frame = rect;
         return self;
     };
 }
 
-- (UIView *(^)(CGSize))zzSize{
-    return ^(CGSize size){
+- (UIView *(^)(CGFloat w,CGFloat h))zzSize{
+    return ^(CGFloat w,CGFloat h){
         CGRect rect = self.frame;
-        rect.size = size;
+        rect.size = CGSizeMake(w, h);
         self.frame = rect;
         return self;
     };

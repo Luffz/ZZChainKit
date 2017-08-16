@@ -90,8 +90,16 @@
     };
 }
 
-UIColor *ZZHexColor(NSString *hex) {
-    return [UIColor colorWithHex:(hex)];
+UIColor *ZZHexC(NSString *hex) {
+    return [UIColor colorWithHex:hex];
+}
+
+UIColor *ZZRgbC(CGFloat r,CGFloat g,CGFloat b) {
+    return UIColor.zzRgb(r,g,b);
+}
+
+UIColor *ZZComRgbC(CGFloat obj) {
+    return UIColor.zzComRgb(obj);
 }
 
 
